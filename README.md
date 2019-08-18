@@ -1,6 +1,6 @@
 # ExpressJS URL Shortener
 
-Simple NodeJS Application in which it converts a long URL to a short One using Express JS and Mongoose
+Simple NodeJS Application in which it converts a long URL to a short one using Express JS and Mongoose
 
 ## Installation
 
