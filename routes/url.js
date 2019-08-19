@@ -5,8 +5,18 @@ const shortId = require('shortid');
 
 const Url = require('../models/Url');
 
-// @route   POST  /api/url/shorten
-// @desc          Create short Url 
+/**
+ * @api {post} /shorten Create a short URL
+ * @apiName Generate a short URL
+ * @apiGroup Generate
+ * 
+ * @apiParam {String} longUrl The long url link that should be shortened
+ * 
+ * @apiSuccess {String} longUrl the long url submitted
+ * @apiSuccess {String} shortUrl the generated link that will automatically redirect
+ * @apiSuccess {String} urlCode the code generated
+ * @apiSuccess {String} Date date of submission
+ */
 
 router.post('/shorten', async (req, res) => {
     const { longUrl } = req.body;

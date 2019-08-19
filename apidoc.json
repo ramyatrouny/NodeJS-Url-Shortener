@@ -1,0 +1,7 @@
+{
+    "name": "Url shortener service",
+    "version": "0.1.1",
+    "description": "A basic URL shortener service to convert long urls to a short one",
+    "url": "https://url-shortener-nodejs.herokuapp.com",
+    "author": "Rami Atrouni"
+  }

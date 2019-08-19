@@ -9,7 +9,7 @@ const connectDB = require('./config/db');
 connectDB();
 
 const app = express();
-
+app.use(express.static(__dirname + '/views'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 

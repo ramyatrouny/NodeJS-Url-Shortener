@@ -5,12 +5,18 @@ const Url = require('../models/Url');
 
 // @route       GET /
 router.get("/", (req, res) => {
-    res.send("Url Shorten");
+    res.sendFile(path.join(__dirname+'/index.html'));
 });
 
+/**
+ * @api {get} /:code Redirect to the request Page
+ * @apiName Redirect Page
+ * @apiGroup Redirect
+ * 
+ * @apiParam {String} code The code Generated from the link
+ * 
+ */
 
-//  @route          GET /:code
-//  @description    Redirect to the original URL
 router.get('/:code', async (req, res) => {
     try {
         const url = await Url.findOne({ urlCode: req.params.code });
