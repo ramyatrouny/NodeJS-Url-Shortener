@@ -1,7 +1,7 @@
 define({ "api": [
   {
     "type": "post",
-    "url": "/shorten",
+    "url": "/api/url/shorten",
     "title": "Create a short URL",
     "name": "Generate_a_short_URL",
     "group": "Generate",
