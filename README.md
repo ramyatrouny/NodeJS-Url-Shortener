@@ -10,6 +10,14 @@ To install the packages
 npm install
 ```
 
+To create the needed environment variables
+
+```bash
+touch .env
+mongoURI=<MONGO LINK>
+baseUrl=<Your domain localhost:5000 or your public domain>
+```
+
 To run the application in the development mode in which it uses nodemon service for auto reload
 
 ```bash
@@ -25,7 +33,6 @@ npm run start
 ## API Usage
 
 ```
-
 ## To convert your long url to a short one
 POST localhost:5000/api/url/shorten
 BODY longUrl => <YOUR LONG URL>
