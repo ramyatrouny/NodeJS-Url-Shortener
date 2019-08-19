@@ -3,6 +3,12 @@ const router = express.Router();
 
 const Url = require('../models/Url');
 
+// @route       GET /
+router.get("/", (req, res) => {
+    res.send("Url Shorten");
+});
+
+
 //  @route          GET /:code
 //  @description    Redirect to the original URL
 router.get('/:code', async (req, res) => {
