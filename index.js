@@ -16,6 +16,4 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/', require('./routes/index'))
 app.use('/api/url', require('./routes/url'))
 
-const PORT= 5000;
-
-app.listen(PORT, () => console.log(`Server Running On Port ${PORT}`));
+app.listen(process.env.PORT || 3000, () => console.log(`Server Running On Port ${PORT}`));
