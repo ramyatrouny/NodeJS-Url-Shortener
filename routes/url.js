@@ -6,7 +6,7 @@ const shortId = require('shortid');
 const Url = require('../models/Url');
 
 /**
- * @api {post} /shorten Create a short URL
+ * @api {post} /api/url/shorten Create a short URL
  * @apiName Generate a short URL
  * @apiGroup Generate
  * 
