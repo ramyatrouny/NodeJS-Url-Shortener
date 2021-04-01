@@ -2,11 +2,8 @@
 
 Simple NodeJS Application in which it converts a long URL to a short one using Express JS and Mongoose
 
-Link: https://url-shortener-nodejs.herokuapp.com/
 
 Documentation via ApiDoc
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Installation
 
